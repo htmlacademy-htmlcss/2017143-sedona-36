@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-header__main-nav main-nav">
-        <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" alt="логоти Седона." width="140px" height="70px"></a>
+        <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" alt="Логотип Седона." width="140px" height="70px"></a>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
@@ -21,6 +21,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <div class="main-inner__background-form background-form">
       <header class="main-inner__inner-header inner-header">
         <h1 class="inner-header__title">Гостиницы Седоны</h1>
         <ol class="inner-header__breadcrumbs breadcrumbs">
@@ -68,9 +69,10 @@
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Стоимость, ₽:</legend>
           </fieldset>
-          <button class="filters__buttom" type="submit">Применить</button>
-          <button class="filters__buttom" type="submit">Сбросить</button>
+          <button class="filters__button filters__button--current" type="submit">Применить</button>
+          <button class="filters__button" type="submit">Сбросить</button>
         </form>
+      </div>
       </section>
       <section class="product-cards">
         <h2 class="visually-hidden">Результаты поиска</h2>
@@ -80,47 +82,47 @@
           <option value="exspensive">Сначала дорогие</option>
           <option value="cheap">Сначала популярные</option>
         </select>
-        <a class="button" href="#">
+        <a class="product-cards__button-grid" href="#">
           <span class="visually-hidden">Показать сетку</span>
         </a>
-        <a class="button" href="#">
+        <a class="product-cards__button-big" href="#">
           <span class="visually-hidden">Показать крупный список</span>
         </a>
-        <a class="button" href="#">
+        <a class="product-cards__button-list" href="#">
           <span class="visually-hidden">Показать мелкий список</span>
         </a>
         <ul class="product-cards__list">
           <li class="product-cards__item">
-            <img class="product-cards__image" src="images/Amara-Resort.jpg" width="300" height="212" alt="Пещера с видом на звездное небо.">
+            <img class="product-cards__image" src="images/amara-resort.jpg" width="300" height="212" alt="Пещера с видом на звездное небо.">
             <h3 class="product-cards__title">Amara Resort & Spa</h3>
-            <span class="product-cards__product-type">Гостиница</span>
+            <p class="product-cards__product-type">Гостиница</p>
             <span class="product-cards__price">От 4000 ₽</span>
             <a class="product-cards__button-more" href="#">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
             <span class="product-cards__rating">Рейтинг: 8,5</span>
           </li>
           <li class="product-cards__item">
-            <img class="product-cards__image" src="images/Poco-Diablo.jpg" width="300" height="212" alt="Радуга над холмом.">
+            <img class="product-cards__image" src="images/poco-diablo.jpg" width="300" height="212" alt="Радуга над холмом.">
             <h3 class="product-cards__name">Villas at Poco Diablo</h3>
-            <span class="product-cards__product-type">Гостиница</span>
+            <p class="product-cards__product-type">Гостиница</p>
             <span class="product-cards__price">От 5000 ₽</span>
             <a class="product-cards__button-more">Подробнее</a>
-            <button class="product-cards__button-favourites" type="button">В Избранное</button>
+            <button class="product-cards__button-favourites product-cards__button-favourites--active" type="button">В Избранном</button>
             <span class="product-cards__rating">Рейтинг: 9,2</span>
           </li>
           <li class="product-cards__item">
-            <img class="product-cards__image" src="images/Desert-Quail.jpg" width="300" height="212" alt="Горы в пустыне.">
+            <img class="product-cards__image" src="images/desert-quail.jpg" width="300" height="212" alt="Горы в пустыне.">
             <h3 class="product-cards__name">Desert Quail Inn</h3>
-            <span class="product-cards__product-type">Гостиница</span>
+            <p class="product-cards__product-type">Гостиница</p>
             <span class="product-cards__price">От 2500 ₽</span>
             <a class="product-cards__button-more">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
             <span class="product-cards__rating">Рейтинг: 6,9</span>
           </li>
           <li class="product-cards__item">
-            <img class="product-cards__image" src="images/GreenTree.jpg" width="300" height="212" alt="Горы на фоне звездного неба.">
+            <img class="product-cards__image" src="images/greentree.jpg" width="300" height="212" alt="Горы на фоне звездного неба.">
             <h3 class="product-cards__name">GreenTree Inn</h3>
-            <span class="product-cards__product-type">Гостиница</span>
+            <p class="product-cards__product-type">Гостиница</p>
             <span class="product-cards__price">От 1500 ₽</span>
             <a class="product-cards__button-more" type="button">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
@@ -147,6 +149,14 @@
             <a class="pagination__link" href="#">10</a>
           </li>
         </ul>
+      </section>
+      <section class="subscribe-catalog">
+        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+        <p class="subscribe__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe__form" action="http://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" name="email">
+          <button class="subscribe__button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
