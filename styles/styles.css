@@ -106,7 +106,7 @@ body {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../images/Favourites.svg");
+  background-image: url("../images/favourites.svg");
   background-repeat: no-repeat;
 }
 
@@ -117,7 +117,9 @@ body {
 
 .hero__welcome-logo {
   display: block;
-  margin: 51px auto 82px;
+  position: absolute;
+  top: 115px;
+  left: 371px;
 }
 
 .slogan {
@@ -158,9 +160,9 @@ body {
   list-style: none;
 }
 
-.advantages__item-sedona, advantages__item-bridge {
+.advantages__item-sedona, .advantages__item-bridge {
   display: flex;
-  width: 100%;
+  width: 1200px;
 }
 
 .image-city {
@@ -180,12 +182,12 @@ body {
 
 .advantages__item:nth-child(even) {
   background-color: #83b3d31f;
-  width: 33%;
+  width: 400px;
 }
 
 .advantages__item:nth-child(3) {
   background-color: #83b3d333;
-  width: 33%;
+  width: 400px;
 }
 
 .comfort__wrapper {
@@ -267,6 +269,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .subscribe {
