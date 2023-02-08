@@ -14,14 +14,53 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans";
+  min-height: 100%;
+  width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400px;
   color: #333333;
   background-color: #ffffff;
-  width: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  margin: 0;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 507px;
 }
 
 .main-nav__link {
@@ -29,6 +68,7 @@ body {
 }
 
 .main-nav__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -41,28 +81,47 @@ body {
 .main-nav__search-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  width: 268px;
   list-style: none;
   font-size: 16px;
   line-height: 20px;
 }
 
-button {
+.main-nav__button {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
 }
 
-.main-nav__search-list .main-nav__link:nth-child(1) {
+.main-nav__search-link {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
 }
 
-.main-nav__search-list .main-nav__link:nth-child(2) {
+.main-nav__favourites-link {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   background-image: url("../images/Favourites.svg");
   background-repeat: no-repeat;
 }
 
+.hero__background-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__welcome-logo {
+  display: block;
+  margin: 51px auto 82px;
+}
+
 .slogan {
+  padding: 69px auto;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -91,9 +150,27 @@ button {
 }
 
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.advantages__item-sedona, advantages__item-bridge {
+  display: flex;
+  width: 100%;
+}
+
+.image-city {
+  display: block;
+  margin-left: auto;
+}
+
+.image-bridge {
+  display: block;
+  margin-right: auto;
 }
 
 .advantages__item:nth-child(1), .advantages__item:nth-child(5) {
@@ -103,13 +180,20 @@ button {
 
 .advantages__item:nth-child(even) {
   background-color: #83b3d31f;
+  width: 33%;
 }
 
 .advantages__item:nth-child(3) {
   background-color: #83b3d333;
+  width: 33%;
+}
+
+.comfort__wrapper {
+  margin: 0 auto;
 }
 
 .comfort {
+  padding: 64px auto;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -129,9 +213,15 @@ button {
 }
 
 .recommendation__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.recommendation__item {
+  width: 1fr;
 }
 
 .recommendation__title {
@@ -160,6 +250,7 @@ button {
 }
 
 .search {
+  padding: 96px auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -179,6 +270,7 @@ button {
 }
 
 .subscribe {
+  padding: 96px auto 104px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -203,7 +295,18 @@ button {
   background-color: #82b3d3;
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  margin-left: 81px;
+}
+
 .social__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -229,6 +332,10 @@ button {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
+}
+
+.html-academy {
+  margin-right: 70px;
 }
 
 .html-academy__link {
@@ -263,6 +370,7 @@ button {
 
 .breadcrumbs__link:nth-child(1) {
   background-image: url("../images/main-icon-house.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs__link {
@@ -296,18 +404,21 @@ button {
 
 .product-cards__button-grid {
   background-image: url("../images/cards-grid.svg");
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
 
 .product-cards__button-big {
   background-image: url("../images/cards-big.svg");
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
 
 .product-cards__button-list {
   background-image: url("../images/cards-list.svg");
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
@@ -357,6 +468,9 @@ button {
 }
 
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
   margin: 0;
   padding: 0;
   list-style: none;
