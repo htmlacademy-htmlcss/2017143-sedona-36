@@ -8,19 +8,23 @@
 </head>
   <body>
     <header class="main-header">
+      <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
-        <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" alt="Логотип Седона." width="140px" height="70px"></a>
+        <div class="main-nav__wrapper">
+        <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона." width="140px" height="70px"></a>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Гостиницы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="index.html">Гостиницы</a></li>
         </ul>
+        </div>
         <ul class="main-nav__search-list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Избранное</a></li>
           <li class="main-nav__item"><a class="main-nav__link button" href="#">Хочу сюда!</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main class="main-inner">
       <div class="main-inner__background-form background-form">
@@ -101,6 +105,7 @@
             <span class="product-cards__price">От 4000 ₽</span>
             <a class="product-cards__button-more" href="#">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
+            <img class="product-cards__four-stars-image four-stars-image" src="images/four-stars.svg" width="90" height="17" alt="Рейтинг 4 звезды.">
             <span class="product-cards__rating">Рейтинг: 8,5</span>
           </li>
           <li class="product-cards__item">
@@ -110,6 +115,7 @@
             <span class="product-cards__price">От 5000 ₽</span>
             <a class="product-cards__button-more">Подробнее</a>
             <button class="product-cards__button-favourites product-cards__button-favourites--active" type="button">В Избранном</button>
+            <img class="product-cards__four-stars-image four-stars-image" src="images/four-stars.svg" width="90" height="17" alt="Рейтинг 4 звезды.">
             <span class="product-cards__rating">Рейтинг: 9,2</span>
           </li>
           <li class="product-cards__item">
@@ -119,6 +125,7 @@
             <span class="product-cards__price">От 2500 ₽</span>
             <a class="product-cards__button-more">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
+            <img class="product-cards__three-stars-image three-stars-image" src="images/three-stars.svg" width="66" height="17" alt="Рейтинг 3 звезды.">
             <span class="product-cards__rating">Рейтинг: 6,9</span>
           </li>
           <li class="product-cards__item">
@@ -128,6 +135,7 @@
             <span class="product-cards__price">От 1500 ₽</span>
             <a class="product-cards__button-more" type="button">Подробнее</a>
             <button class="product-cards__button-favourites" type="button">В Избранное</button>
+            <img class="product-cards__two-stars-image two-stars-image" src="images/two-stars.svg" width="42" height="17" alt="Рейтинг 2 звезды.">
             <span class="product-cards__rating">Рейтинг: 5,0</span>
           </li>
         </ul>
@@ -163,7 +171,7 @@
     </main>
     <footer class="main-footer">
       <section class="social">
-        <h2 class="vissually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="http://vk.com/htmlacademy">Вконтакте</a>
@@ -181,7 +189,7 @@
         <span class="contact__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
       </section>
       <section class="html-academy">
-        <h2 class="vissually-hidden">Логотип академии</h2>
+        <h2 class="visually-hidden">Логотип академии</h2>
         <a class="html-academy__link" href="#">HTML Academy</a>
       </section>
     </footer>

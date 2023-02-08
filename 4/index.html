@@ -9,20 +9,25 @@
   <body>
     <header class="main-header">
       <nav class="main-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
         <a class="main-nav__link"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона." width="140px" height="70px"></a>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
         </ul>
+        </div>
+        <div class="serch-list__wrapper">
         <ul class="main-nav__search-list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Избранное</a></li>
-          <li class="main-nav__item"><a class="main-nav__link button" href="#">Хочу сюда!</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__search-link" href="#">Поиск</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#">Избранное</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__button" href="#">Хочу сюда!</a></li>
         </ul>
+        </div>
       </nav>
     </header>
     <main class="page-main">
+      <div class="page-main__main-container main-container">
       <h1 class="visually-hidden">Город Седона</h1>
       <section class="hero">
         <h2 class="visually-hidden">Блок приветствия</h2>
@@ -30,16 +35,20 @@
         <img class="hero__welcome-logo" src="images/welcome-logo.svg" width="458" height="352" alt="welcome to the gorgeus sedona.">
       </section>
       <section class="slogan">
+        <div class="slogan__wrapper">
         <h2 class="slogan__title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="slogan__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-sedona">
+            <div class="item-sedona__wrapper">
             <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img class="advantages__image-city image-city" src="images/city-sedona.jpg" width="800" height="384" alt="город Седона.">
           </li>
           <li class="advantages__item">
@@ -54,16 +63,20 @@
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-bridge">
+            <div class="item-bridge__wrapper">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantage__image-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола.">
+            </div>
+            <img class="advantage__image-bridge image-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола.">
           </li>
         </ul>
       </section>
       <section class="comfort">
+        <div class="comfort__wrapper">
         <h2 class="comfort__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="comfort__description">Опытный персонал и качественное обслуживание!</p>
+        </div>
       </section>
       <section class="recommendation">
         <h2 class="visually-hidden">Рекомендации</h2>
@@ -99,10 +112,11 @@
           <button class="subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="main-footer">
       <section class="social">
-        <h2 class="vissually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link-vk" href="http://vk.com/htmlacademy">Вконтакте</a>
@@ -120,7 +134,7 @@
         <p class="contact__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
       </section>
       <section class="html-academy">
-        <h2 class="vissually-hidden">Логотип академии</h2>
+        <h2 class="visually-hidden">Логотип академии</h2>
         <a class="html-academy__link" href="#">HTML Academy</a>
       </section>
     </footer>
