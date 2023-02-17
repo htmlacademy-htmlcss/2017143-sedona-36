@@ -8,23 +8,23 @@
 </head>
   <body>
     <header class="main-header">
-      <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper">
         <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона." width="140px" height="70px"></a>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="index.html">Гостиницы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Гостиницы</a></li>
         </ul>
         </div>
+        <div class="serch-list__wrapper">
         <ul class="main-nav__search-list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Избранное</a></li>
-          <li class="main-nav__item"><a class="main-nav__link button" href="#">Хочу сюда!</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__search-link" href="#"></a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#"></a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__button" href="#">Хочу сюда!</a></li>
         </ul>
+        </div>
       </nav>
-      </div>
     </header>
     <main class="main-inner">
       <div class="main-inner__background-form background-form">
@@ -32,7 +32,7 @@
         <h1 class="inner-header__title">Гостиницы Седоны</h1>
         <ol class="inner-header__breadcrumbs breadcrumbs">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <a class="breadcrumbs__link breadcrumbs__home" href="index.html"><span class="visually-hidden">Главная</span></a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link">Гостиницы</a>
@@ -75,28 +75,41 @@
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Стоимость, ₽:</legend>
           </fieldset>
-          <button class="filters__button filters__button--current" type="submit">Применить</button>
-          <button class="filters__button" type="submit">Сбросить</button>
+          <div class="filters__container">
+            <button class="filters__button filters__button--current" type="submit">Применить</button>
+            <button class="filters__button" type="submit">Сбросить</button>
+          </div>
         </form>
       </div>
       </section>
       <section class="product-cards">
         <h2 class="visually-hidden">Результаты поиска</h2>
+        <div class="product-cards__filters">
         <span class="product-cards__result">Найдено гостиниц: 38</span>
         <select class="product-cards__select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешевые</option>
           <option value="exspensive">Сначала дорогие</option>
           <option value="cheap">Сначала популярные</option>
         </select>
-        <a class="product-cards__button-grid" href="#">
-          <span class="visually-hidden">Показать сетку</span>
-        </a>
-        <a class="product-cards__button-big" href="#">
-          <span class="visually-hidden">Показать крупный список</span>
-        </a>
-        <a class="product-cards__button-list" href="#">
-          <span class="visually-hidden">Показать мелкий список</span>
-        </a>
+        <ul class="product-cards__list-view">
+          <li class="list-view__item">
+            <a class="product-cards__button-grid" href="#">
+              <span class="visually-hidden">Показать сетку</span>
+            </a>
+          </li>
+          <li class="list-view__item">
+            <a class="product-cards__button-big" href="#">
+              <span class="visually-hidden">Показать крупный список</span>
+            </a>
+          </li>
+          <li class="list-view__item">
+            <a class="product-cards__button-list" href="#">
+              <span class="visually-hidden">Показать мелкий список</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="product-cards__wrapper">
         <ul class="product-cards__list">
           <li class="product-cards__item">
             <img class="product-cards__image" src="images/amara-resort.jpg" width="300" height="212" alt="Пещера с видом на звездное небо.">
@@ -139,6 +152,7 @@
             <span class="product-cards__rating">Рейтинг: 5,0</span>
           </li>
         </ul>
+        </div>
         <ul class="product-cards__pagination pagination">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--active" href="#">1</a>
@@ -174,19 +188,19 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="http://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link-vk" href="http://vk.com/htmlacademy">VK</a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="http://t.me/htmlacademy">Телеграм</a>
+            <a class="social__link-tg" href="http://t.me/htmlacademy">Telegram</a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="http://youtube.com/user/htmlacademy">Ютуб</a>
+            <a class="social__link-youtube" href="http://youtube.com/user/htmlacademy">Youtube</a>
           </li>
         </ul>
       </section>
       <section class="contact">
         <h2 class="visually-hidden">Контактный телефон</h2>
-        <span class="contact__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
+        <p class="contact__phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
       </section>
       <section class="html-academy">
         <h2 class="visually-hidden">Логотип академии</h2>

@@ -19,8 +19,8 @@
         </div>
         <div class="serch-list__wrapper">
         <ul class="main-nav__search-list">
-          <li class="main-nav__item"><a class="main-nav__link main-nav__search-link" href="#">Поиск</a></li>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#">Избранное</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__search-link" href="#"></a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#"></a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__button" href="#">Хочу сюда!</a></li>
         </ul>
         </div>
@@ -31,8 +31,10 @@
       <h1 class="visually-hidden">Город Седона</h1>
       <section class="hero">
         <h2 class="visually-hidden">Блок приветствия</h2>
+        <div class="hero__image-container">
         <img class="hero__background-image" src="images/index-background.jpg" alt="Горы Седоны." width="1200" height="485">
         <img class="hero__welcome-logo" src="images/welcome-logo.svg" width="458" height="352" alt="welcome to the gorgeus sedona.">
+        </div>
       </section>
       <section class="slogan">
         <div class="slogan__wrapper">
@@ -44,31 +46,31 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item-sedona">
-            <div class="item-sedona__wrapper">
-            <h3 class="advantages__title">Настоящий городок</h3>
+          <li class="advantages__item-sedona">
+            <div class="item-sedona__container">
+            <h3 class="advantages__title advantages__image-title">Настоящий городок</h3>
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages__image-city image-city" src="images/city-sedona.jpg" width="800" height="384" alt="город Седона.">
+            <img class="advantages__image-city image-city" src="images/city-sedona.jpg" width="800" height="390" alt="город Седона.">
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__description">Все достопримечательности находятся очень близко</p>
+            <h3 class="advantages__title">Небольшая<br> площадь</h3>
+            <p class="advantages__description">Все достопримечательности<br> находятся очень близко</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages__title">Красивая<br> дорога</h3>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="advantages__title">Мало<br> туристов</h3>
+            <p class="advantages__description">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
-          <li class="advantages__item advantages__item-bridge">
-            <div class="item-bridge__wrapper">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
+          <li class="advantages__item-bridge">
+            <img class="advantage__image-bridge image-bridge" src="images/devils-bridge.jpg" width="800" height="390" alt="Мост дьявола.">
+            <div class="item-bridge__container">
+            <h3 class="advantages__title advantages__image-title">Там есть мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="advantage__image-bridge image-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола.">
           </li>
         </ul>
       </section>
@@ -81,17 +83,17 @@
       <section class="recommendation">
         <h2 class="visually-hidden">Рекомендации</h2>
         <ul class="recommendation__list">
-          <li class="recommendation__item">
-            <h3 class="recommendation__title">Жилье</h3>
-            <p class="recommendation-description">Рекомендуем пожитьв настоящем мотеле,
+          <li class="recommendation__item recommendation__hotel-item">
+            <h3 class="recommendation__title">Жильё</h3>
+            <p class="recommendation-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
               всё как в кино!</p>
           </li>
-          <li class="recommendation__item">
+          <li class="recommendation__item recommendation__food-item">
             <h3 class="recommendation__title">Еда</h3>
             <p class="recommendation-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="recommendation__item">
+          <li class="recommendation__item recommendation__souvenir-item">
             <h3 class="recommendation__title">Сувениры</h3>
             <p class="recommendation-description">Не только китайского,
               но и настоящего местного производства!</p>
@@ -99,10 +101,10 @@
         </ul>
       </section>
       <section class="search">
-        <h2 class="vissually-hidden">Блок открытия формы поиска гостиниц</h2>
+        <h2 class="visually-hidden">Блок открытия формы поиска гостиниц</h2>
         <p class="search__summon">Заинтересовались?</p>
         <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search__link button" href="#">поиск гостиницы в седоне</a>
+        <div class="search__link-container"><a class="search__link button" href="#">поиск гостиницы в седоне</a></div>
       </section>
       <section class="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
@@ -119,13 +121,13 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link-vk" href="http://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link-vk" href="http://vk.com/htmlacademy">VK</a>
           </li>
           <li class="social__item">
-            <a class="social__link-tg" href="http://t.me/htmlacademy">Телеграм</a>
+            <a class="social__link-tg" href="http://t.me/htmlacademy">Telegram</a>
           </li>
           <li class="social__item">
-            <a class="social__link-youtube" href="http://youtube.com/user/htmlacademy">Ютуб</a>
+            <a class="social__link-youtube" href="http://youtube.com/user/htmlacademy">Youtube</a>
           </li>
         </ul>
       </section>
