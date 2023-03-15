@@ -1342,7 +1342,8 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  width: 100%;
+  display: none;
+  width: 1200px;
   height: 100%;
   background-color: #f2f2f2cc;
 }
