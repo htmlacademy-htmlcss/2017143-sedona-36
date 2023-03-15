@@ -19,7 +19,11 @@
         <div class="serch-list__wrapper">
         <ul class="main-nav__search-list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__search-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__favourites-link" href="#">
+            <span class="main-nav__favourites-number">12</span>
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__button" href="#">Хочу сюда!</a></li>
         </ul>
         </div>
@@ -161,5 +165,50 @@
         </a>
       </section>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="http//:echo.htmlacademy.ru/" method="get">
+            <label class="modal-label-start" for="start">Дата Заезда:</label>
+            <input class="modal-input-start" type="date" name="start" id="start">
+            <p class="info-error">Мы не можем отправить вас в прошлое.</p>
+            <label class="modal-label-end" for="end">Дата Выезда:</label>
+            <input class="modal-input-end" type="date" name="end" id="end">
+            <p class="info-yes">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-label-men" for="men">Взрослые</label>
+            <div class="men-container">
+              <input type="button" class="button-minus" value="-" onclick="change('men',0,30,-1);">
+              <input class="men" name="men" id="men" type="text" value="2">
+              <input type="button" class="button-plus" value="+" onclick="change('men',0,30, 1);">
+            </div>
+            <span class="modal-label-child">
+              <label class="modal-label-child" for="kinder">Дети</label>
+              <span class="tooltip">
+                <button class="button-icon-info" type="button">
+                  <svg class="icon-info" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
+                  </svg>
+                </button>
+                <span class="tooltip-child-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </span>
+            <div class="child-container">
+              <input class="button-minus" type="button" value="-" onclick="change('child',0,30,-1);">
+              <input class="child" type="text" name="child" id="child" value="2">
+              <input class="button-plus" type="button" value="+" onclick="change('child',0,30, 1);">
+              </div>
+            <button class="modal-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
