@@ -10,7 +10,8 @@
     <header class="main-header">
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper">
-        <a class="main-nav__link"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона."></a>
+        <a class="main-nav__link" href="index.html"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона.">
+        </a>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
@@ -56,7 +57,7 @@
         </header>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
-          <form class="filters__catalog-filter catalog-filter" action="http//:echo.htmlacademy.ru/" method="get">
+          <form class="filters__catalog-filter catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group catalog-filter-infrastructure">
               <legend class="catalog-filter-legend">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
@@ -94,14 +95,14 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="catalog-form__control control">
+                    <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="housing" value="motel">
                       <span class="control-radio"></span>
-                      мотель
+                      Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="catalog-form__control control">
+                    <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="housing" value="apartments">
                       <span class="control-radio"></span>
                       Аппартаменты
@@ -113,7 +114,7 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 206px;">
+                  <div class="range-bar">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -124,17 +125,23 @@
                 </div>
                 <div class="range-wrapper-inputs">
                  <label class="catalog-filter-label">
-                    <input class="range-input range-input-first" type="text" value="0" name="min-price" placeholder="от">
+                  <div class="input-container">
+                    <span class="placeholder">от</span>
+                    <input class="range-input range-input-first" type="text" value="0" name="min-price">
+                 </div>
                   </label>
                   <label class="catalog-filter-label">
-                   <input class="range-input range-input-last" type="text" value="9000" name="max-price" placeholder="до">
+                    <div class="input-container">
+                      <span class="placeholder">до</span>
+                      <input class="range-input range-input-last" type="text" value="9000" name="max-price">
+                    </div>
                   </label>
                 </div>
               </div>
             </fieldset>
             <div class="filters__container">
-              <button class="filters__button filters__button--current" type="submit">Применить</button>
-              <button class="filters__button" type="submit">Сбросить</button>
+              <button class="filters__button--current" type="submit">Применить</button>
+              <button class="filters__button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -266,9 +273,11 @@
       <section class="subscribe-catalog">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="subscribe__form" action="http://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш e-mail" name="email">
-          <button class="subscribe__button" type="submit">Подписаться</button>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscribe-control">
+            <input class="subscribe-input" type="email" placeholder="Ваш e-mail" name="email">
+            <button class="subscribe__button" type="submit">Подписаться</button>
+          </label>
         </form>
       </section>
     </main>
