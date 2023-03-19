@@ -488,7 +488,7 @@ body {
   background-color: #756157;
 }
 
-.subscribe-control {
+.subscribe__form {
   display: flex;
 }
 
@@ -931,7 +931,7 @@ body {
   outline: 2px solid #000000;
 }
 
-.input-container {
+.catalog-filter-label {
   position: relative;
 }
 
