@@ -10,9 +10,9 @@
     <header class="main-header">
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper">
-        <a class="main-nav__link"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона."></a>
+        <a class="main-nav__link" href="#"><img class="main-nav__logo-sedona" src="images/main-logo.svg" width="140" height="70" alt="Логотип Седона."></a>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="#">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">О Седоне</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -55,7 +55,7 @@
             <h3 class="advantages__title advantages__image-title">Настоящий городок</h3>
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages__image-city image-city" src="images/city-sedona.jpg" width="800" height="390" alt="город Седона.">
+            <img class="advantages__image-city image-city" src="images/city-sedona.jpg" width="800" height="385" alt="город Седона.">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая<br> площадь</h3>
@@ -70,7 +70,7 @@
             <p class="advantages__description">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
           <li class="advantages__item-bridge">
-            <img class="advantage__image-bridge image-bridge" src="images/devils-bridge.jpg" width="800" height="390" alt="Мост дьявола.">
+            <img class="advantage__image-bridge image-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола.">
             <div class="item-bridge__container">
             <h3 class="advantages__title advantages__image-title">Там есть мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -117,6 +117,7 @@
         <p class="subscribe__description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-control">
+            <span class="visually-hidden">Укажите вашу электронную почту</span>
             <input class="subscribe-input" type="email" placeholder="Ваш e-mail" name="email">
           </label>
           <button class="subscribe__button" type="submit">Подписаться</button>
